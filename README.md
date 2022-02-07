@@ -1,2 +1,2 @@
 # gb_ansible_cm
-GB homeworks for ansimle cm 
+GB homeworks for ansible cm 
