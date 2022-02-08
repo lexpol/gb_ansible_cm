@@ -34,3 +34,4 @@
     checksum: yes
     recursive: yes
     delete: yes
+  notify: restart nginx
