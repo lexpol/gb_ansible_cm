@@ -1,0 +1,5 @@
+- name: Download file
+  get_url:
+    url: https://filesamples.com/samples/document/txt/sample1.txt
+    dest: /home/ansible/sample1.txt
+    mode: '0440'
