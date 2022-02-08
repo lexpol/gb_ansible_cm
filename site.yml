@@ -1,0 +1,41 @@
+---
+- name: Add user
+  hosts: lexlab_ams
+  gather_facts: false
+  become: true
+  roles:
+    - role: create_user
+
+- name: Create directory
+  hosts: lexlab_ams
+  gather_facts: false
+  become: true
+  roles:
+    - role: create_dir
+
+- name: install packages
+  hosts: lexlab_ams
+  gather_facts: false
+  become: true
+  roles:
+    - role: install_packages
+
+- name: download file
+  hosts: lexlab_ams
+  gather_facts: false
+  become: true
+  roles:
+    - role: download_file
+
+- name: install nginx
+  hosts: lexlab_web
+  gather_facts: false
+  become: true
+  roles:
+    - role: install_nginx
+
+  handlers:
+    - name: restart nginx
+      service:
+        name: nginx
+        state: restarted

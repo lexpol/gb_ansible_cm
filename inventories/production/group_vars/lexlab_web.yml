@@ -1,0 +1,4 @@
+---
+domain: zzz.com
+www_user: ansible
+www_group: ansible
