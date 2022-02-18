@@ -1,18 +1,19 @@
 ---
-# WordPress database settings
-wp_db_name: wordpress
-wp_db_user: wordpress
-wp_db_password: wordpress_db_password
 
-mysql_port: 3306
-mysql_user_name: wordpress
-mysql_user_password: ""
-mysql_root_password: "15AGeBZSOOx2R4kP6mgv"
-#
-auto_up_disable: true
-#
 server_hostname: lexlab.dev
 nginx_port: 8080
+
+## WordPress database settings
+#wp_db_name: wordpress
+#wp_db_user: wordpress
+#wp_db_password: wordpress_db_password
+#
+#mysql_port: 3306
+#mysql_user_name: wordpress
+#mysql_user_password: ""
+#
+#auto_up_disable: true
+#
 #
 ## WordPress Version
 #wp_version: 4.7.5
