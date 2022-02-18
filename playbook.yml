@@ -1,0 +1,12 @@
+---
+- name: main
+  hosts: lexlab
+  gather_facts: false
+  become: true
+  vars_files:
+    - vars/vault.yml
+  roles:
+    - { role: nginx, tags: [nginx]}
+    - {role: mysql, tags: [db]}
+    - {role: test, tags: [tests]}
+    - {role: backup, tags: [bak]}

@@ -1,0 +1,23 @@
+---
+
+- name: Install nginx
+  become: yes
+  package:
+    name: nginx
+    state: latest
+  tags: install
+
+- name: Upload rendered nginx.conf
+  become: yes
+  template:
+    src: "{{ role_path }}/templates/nginx.conf.j2"
+    dest: "/etc/nginx/nginx.conf"
+  notify:
+    - restart nginx
+  tags: init_nginx
+
+- name: Upload test file
+  copy:
+    dest: "/var/www/zzz"
+    content: 'success'
+  tags: init_nginx
