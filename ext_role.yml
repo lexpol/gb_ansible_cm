@@ -1,0 +1,6 @@
+---
+- name: Test external role
+  hosts: lexlab
+  become: true
+  roles:
+    - { role: ansible-role-php, tags: [php]}

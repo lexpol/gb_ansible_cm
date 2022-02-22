@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="41f86eb8-2fc9-4f32-a891-41281952ebb9" name="Changes" comment="hw5" />
+    <list default="true" id="41f86eb8-2fc9-4f32-a891-41281952ebb9" name="Changes" comment="hw5">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ansible.cfg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ext_role.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/install_req.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles_requirements.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -117,7 +124,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645159761935</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="hw5">
+      <created>1645561257804</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1645561257804</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="UnknownFeatures">
