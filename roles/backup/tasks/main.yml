@@ -1,0 +1,17 @@
+---
+- name: copy backup script
+  copy:
+    src: "{{ role_path }}/templates/backup.sh"
+    dest: "/root/backup.sh"
+    owner: root
+    group: root
+    mode: 700
+
+- name: Creates a cron task
+  ansible.builtin.cron:
+    name: backup db
+    minute: "0"
+    hour: "*/1"
+    user: root
+    job: "/root/backup.sh"
+    cron_file: backup_db
