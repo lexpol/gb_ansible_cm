@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="41f86eb8-2fc9-4f32-a891-41281952ebb9" name="Changes" comment="hw5">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ansible.cfg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ext_role.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/install_req.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/roles_requirements.yml" afterDir="false" />
+    <list default="true" id="41f86eb8-2fc9-4f32-a891-41281952ebb9" name="Changes" comment="hw6 - add gitignore">
+      <change afterPath="$PROJECT_DIR$/.ansible-lint" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yamllint" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run_lints.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext_role.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/playbook.yml" beforeDir="false" afterPath="$PROJECT_DIR$/playbook.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/roles/mysql/tasks/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/roles/mysql/tasks/main.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/roles/test/tasks/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/roles/test/tasks/main.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645561257804</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="hw6 - add gitignore">
+      <created>1645574105888</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1645574105888</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -156,6 +165,7 @@
     <MESSAGE value="hw4 - init" />
     <MESSAGE value="hw4 - hw4" />
     <MESSAGE value="hw5" />
-    <option name="LAST_COMMIT_MESSAGE" value="hw5" />
+    <MESSAGE value="hw6 - add gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="hw6 - add gitignore" />
   </component>
 </project>

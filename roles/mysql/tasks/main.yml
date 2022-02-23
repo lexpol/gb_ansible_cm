@@ -31,6 +31,7 @@
     login_user: root
     login_password: "{{ mysql_root_password }}"
     login_unix_socket: /var/run/mysqld/mysqld.sock
+  no_log: true
   tags: init_db
 
 - name: Update Mysql config
@@ -44,6 +45,7 @@
     name: ''
     host_all: yes
     state: absent
+  no_log: true
   tags: init_db
 
 - name: Removes the MySQL test database
