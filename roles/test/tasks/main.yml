@@ -1,0 +1,36 @@
+---
+
+- name: Check that page return status 200
+  uri:
+    url: "http://{{ansible_host}}:{{nginx_port}}"
+    status_code: 200
+  delegate_to: localhost
+
+- name: check if DB exists
+  shell: mysql -e 'SHOW DATABASES;' | grep {{ wp_db_name }}
+  register: dbstatus
+  failed_when: dbstatus.rc == 2
+
+- name: download file
+  get_url:
+    url: "http://{{ansible_host}}:{{nginx_port}}/zzz"
+    dest: /tmp/testfile.txt
+  register: readme_stdout
+
+- name: Check page contents
+  uri:
+    url: "http://{{ansible_host}}:{{nginx_port}}/zzz"
+    return_content: yes
+  register: this
+  failed_when: "'success' not in this.content"
+  delegate_to: localhost
+
+- name: Check nginx response time
+  uri:
+    url: "http://{{ansible_host}}:{{nginx_port}}"
+    method: GET
+    status_code: 200
+    timeout: 1
+  delegate_to: localhost
+
+
