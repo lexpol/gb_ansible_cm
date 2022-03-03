@@ -1,0 +1,3 @@
+---
+- name: create file
+  shell: dd if=/dev/urandom of=/tmp/some.file bs=1K count=1
