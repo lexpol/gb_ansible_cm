@@ -1,0 +1,5 @@
+---
+- name: main
+  hosts: lexlab
+  roles:
+    - {role: create_file, tags: [create]}
