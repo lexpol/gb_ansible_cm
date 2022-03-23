@@ -1,0 +1,11 @@
+---
+# tasks file for createdir
+- name: Create directory
+  become: true
+  file:
+    path: "{{ dirname }}"
+    state: directory
+
+- name: Create file
+  become: true
+  shell: echo `date` > "{{ dirname }}"/"{{ filename }}"
