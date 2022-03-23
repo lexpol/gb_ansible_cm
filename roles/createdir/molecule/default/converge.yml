@@ -1,0 +1,7 @@
+---
+- name: Converge
+  hosts: all
+  tasks:
+    - name: "Include common.createdir"
+      include_role:
+        name: "common.createdir"

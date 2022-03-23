@@ -1,0 +1,11 @@
+---
+all:
+  children:
+    lexlab:
+      hosts:
+        192.168.122.183:
+      vars:
+        ansible_connection: ssh
+  vars:
+    dirname: /home/ansible
+    filename: somefile
